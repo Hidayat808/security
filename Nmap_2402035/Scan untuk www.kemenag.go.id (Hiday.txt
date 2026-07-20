@@ -1,0 +1,104 @@
+Scan untuk www.kemenag.go.id (Hidayat_2402035) 
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-20 08:52 +0700
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 08:52
+Completed NSE at 08:52, 0.00s elapsed
+Initiating NSE at 08:52
+Completed NSE at 08:52, 0.00s elapsed
+Initiating NSE at 08:52
+Completed NSE at 08:52, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 08:52
+Completed Parallel DNS resolution of 1 host. at 08:52, 0.51s elapsed
+Initiating Ping Scan at 08:52
+Scanning www.kemenag.go.id (103.7.13.243) [4 ports]
+Completed Ping Scan at 08:52, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 08:52
+Completed Parallel DNS resolution of 1 host. at 08:52, 2.53s elapsed
+Initiating SYN Stealth Scan at 08:52
+Scanning www.kemenag.go.id (103.7.13.243) [65535 ports]
+Discovered open port 53/tcp on 103.7.13.243
+SYN Stealth Scan Timing: About 19.92% done; ETC: 08:55 (0:02:05 remaining)
+SYN Stealth Scan Timing: About 48.59% done; ETC: 08:55 (0:01:05 remaining)
+Discovered open port 8020/tcp on 103.7.13.243
+Completed SYN Stealth Scan at 08:54, 107.47s elapsed (65535 total ports)
+Initiating Service scan at 08:54
+Scanning 2 services on www.kemenag.go.id (103.7.13.243)
+Completed Service scan at 08:54, 6.12s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against www.kemenag.go.id (103.7.13.243)
+Retrying OS detection (try #2) against www.kemenag.go.id (103.7.13.243)
+Initiating Traceroute at 08:54
+Completed Traceroute at 08:54, 0.04s elapsed
+Initiating Parallel DNS resolution of 8 hosts. at 08:54
+Completed Parallel DNS resolution of 8 hosts. at 08:54, 3.03s elapsed
+NSE: Script scanning 103.7.13.243.
+Initiating NSE at 08:54
+Completed NSE at 08:55, 24.12s elapsed
+Initiating NSE at 08:55
+Completed NSE at 08:55, 0.20s elapsed
+Initiating NSE at 08:55
+Completed NSE at 08:55, 0.00s elapsed
+Nmap scan report for www.kemenag.go.id (103.7.13.243)
+Host is up (0.015s latency).
+Not shown: 65514 filtered tcp ports (no-response)
+PORT     STATE  SERVICE        VERSION
+53/tcp   open   tcpwrapped
+80/tcp   closed http
+81/tcp   closed hosts2-ns
+82/tcp   closed xfer
+83/tcp   closed mit-ml-dev
+84/tcp   closed ctf
+113/tcp  closed ident
+443/tcp  closed https
+2099/tcp closed h2250-annex-g
+2212/tcp closed leecoposserver
+8020/tcp open   http-proxy     FortiGuard Web Filtering
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+|_http-title: Web Filter Block Override
+8091/tcp closed jamlink
+8092/tcp closed unknown
+8093/tcp closed unknown
+8484/tcp closed unknown
+9000/tcp closed cslistener
+9001/tcp closed tor-orport
+9002/tcp closed dynamid
+9003/tcp closed unknown
+9004/tcp closed unknown
+9005/tcp closed golem
+Device type: printer|general purpose|security-misc
+Running (JUST GUESSING): Cognitive embedded (88%), Linux 3.X (87%), Fortinet FortiOS 6.X|7.X (86%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:fortinet:fortios:6 cpe:/o:fortinet:fortios:7
+Aggressive OS guesses: Cognitive CXI thermal printer (88%), Linux 3.2 - 3.8 (87%), Fortinet FortiOS 6.2 - 7.2 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 15.192 days (since Sun Jul  5 04:19:28 2026)
+Network Distance: 8 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using port 443/tcp)
+HOP RTT      ADDRESS
+1   1.00 ms  gedungputih.purbaya.ac.id (192.100.3.1)
+2   2.00 ms  192.168.1.1
+3   3.00 ms  180.244.196.1
+4   4.00 ms  125.160.0.41
+5   11.00 ms 118.97.5.133
+6   11.00 ms 118.97.5.134
+7   11.00 ms 103.7.13.2
+8   12.00 ms 103.7.13.243
+
+NSE: Script Post-scanning.
+Initiating NSE at 08:55
+Completed NSE at 08:55, 0.00s elapsed
+Initiating NSE at 08:55
+Completed NSE at 08:55, 0.00s elapsed
+Initiating NSE at 08:55
+Completed NSE at 08:55, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 149.32 seconds
+           Raw packets sent: 131218 (5.779MB) | Rcvd: 147 (6.664KB)

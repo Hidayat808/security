@@ -1,0 +1,107 @@
+Scan untuk www.nasa.gov (Hidayat_2402035)
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-20 09:11 +0700
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 09:11
+Completed NSE at 09:11, 0.00s elapsed
+Initiating NSE at 09:11
+Completed NSE at 09:11, 0.00s elapsed
+Initiating NSE at 09:11
+Completed NSE at 09:11, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 09:11
+Completed Parallel DNS resolution of 1 host. at 09:11, 0.51s elapsed
+Initiating Ping Scan at 09:11
+Scanning www.nasa.gov (192.0.66.108) [4 ports]
+Completed Ping Scan at 09:11, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 09:11
+Completed Parallel DNS resolution of 1 host. at 09:11, 0.50s elapsed
+Initiating SYN Stealth Scan at 09:11
+Scanning www.nasa.gov (192.0.66.108) [65535 ports]
+Discovered open port 80/tcp on 192.0.66.108
+Discovered open port 53/tcp on 192.0.66.108
+Discovered open port 443/tcp on 192.0.66.108
+SYN Stealth Scan Timing: About 5.60% done; ETC: 09:20 (0:08:42 remaining)
+SYN Stealth Scan Timing: About 13.54% done; ETC: 09:18 (0:06:30 remaining)
+SYN Stealth Scan Timing: About 16.59% done; ETC: 09:20 (0:07:38 remaining)
+SYN Stealth Scan Timing: About 31.69% done; ETC: 09:17 (0:04:21 remaining)
+SYN Stealth Scan Timing: About 65.09% done; ETC: 09:15 (0:01:21 remaining)
+Completed SYN Stealth Scan at 09:14, 179.60s elapsed (65535 total ports)
+Initiating Service scan at 09:14
+Scanning 3 services on www.nasa.gov (192.0.66.108)
+Completed Service scan at 09:14, 10.39s elapsed (3 services on 1 host)
+Initiating OS detection (try #1) against www.nasa.gov (192.0.66.108)
+Retrying OS detection (try #2) against www.nasa.gov (192.0.66.108)
+Initiating Traceroute at 09:14
+Completed Traceroute at 09:14, 2.04s elapsed
+Initiating Parallel DNS resolution of 9 hosts. at 09:14
+Completed Parallel DNS resolution of 9 hosts. at 09:14, 0.51s elapsed
+NSE: Script scanning 192.0.66.108.
+Initiating NSE at 09:14
+Completed NSE at 09:14, 22.23s elapsed
+Initiating NSE at 09:14
+Completed NSE at 09:14, 1.41s elapsed
+Initiating NSE at 09:14
+Completed NSE at 09:14, 0.00s elapsed
+Nmap scan report for www.nasa.gov (192.0.66.108)
+Host is up (0.061s latency).
+Other addresses for www.nasa.gov (not scanned): 2a04:fa87:fffd::c000:426c
+Not shown: 65532 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+53/tcp  open  tcpwrapped
+80/tcp  open  http       nginx
+|_http-title: Did not follow redirect to https://www.nasa.gov/
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS
+443/tcp open  ssl/http   nginx
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=nasa.gov
+| Subject Alternative Name: DNS:nasa.gov, DNS:www.nasa.gov
+| Issuer: commonName=YE2/organizationName=Let's Encrypt/countryName=US
+| Public Key type: ec
+| Public Key bits: 256
+| Signature Algorithm: ecdsa-with-SHA384
+| Not valid before: 2026-06-11T00:21:09
+| Not valid after:  2026-09-09T00:21:08
+| MD5:     0d02 b96a 759a 65bf 4fbc 4fe4 fa3a 7804
+| SHA-1:   ceb8 968b 2c0d 3eb3 9f79 59de de8b d600 bd4e 83a0
+|_SHA-256: ffec df2d 5c5b 3f34 cced 0274 762c 0ffe cc68 d486 6744 b147 cee8 7c8c 8c43 94d3
+|_http-favicon: Unknown favicon MD5: E5642B40DE1F7635D4D65299D817125F
+|_http-title: NASA
+|_http-generator: WordPress 7.0.2
+| http-methods: 
+|_  Supported Methods: HEAD POST OPTIONS
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|firewall|media device|broadband router|security-misc
+Running (JUST GUESSING): Linux 2.6.X|3.X|4.X|5.X (94%), IPCop 2.X (94%), Tiandy embedded (92%), D-Link embedded (91%), Draytek embedded (91%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:ipcop:ipcop:2.0 cpe:/o:linux:linux_kernel:3.2 cpe:/o:linux:linux_kernel:4.18 cpe:/o:linux:linux_kernel:5.4 cpe:/h:dlink:dsl-2890al cpe:/h:draytek:vigor_2960 cpe:/o:linux:linux_kernel:2.6.25.20
+Aggressive OS guesses: IPCop 2.0 (Linux 2.6.32) (94%), Linux 2.6.32 (92%), Linux 3.2 (92%), Linux 4.18 (92%), Linux 4.9 (92%), Linux 5.4 (92%), Linux 3.18 (92%), Tiandy NVR (92%), D-Link DSL-2890AL ADSL router (91%), Draytek Vigor 2960 VPN firewall (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 10 hops
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   2.00 ms  gedungputih.purbaya.ac.id (192.100.3.1)
+2   2.00 ms  192.168.1.1
+3   4.00 ms  180.244.196.1
+4   4.00 ms  125.160.0.41
+5   22.00 ms 180.240.190.61
+6   21.00 ms 180.240.190.61
+7   23.00 ms 180.240.191.165
+8   24.00 ms 180.240.204.8
+9   25.00 ms 2635.sgw.equinix.com (27.111.228.209)
+10  25.00 ms 192.0.66.108
+
+NSE: Script Post-scanning.
+Initiating NSE at 09:14
+Completed NSE at 09:14, 0.00s elapsed
+Initiating NSE at 09:14
+Completed NSE at 09:14, 0.00s elapsed
+Initiating NSE at 09:14
+Completed NSE at 09:14, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 223.15 seconds
+           Raw packets sent: 131298 (5.781MB) | Rcvd: 443 (20.582KB)
